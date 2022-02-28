@@ -12,6 +12,6 @@
 ### Circuitos
 
 #### Tarefa 1
-![Circuito 1](Imagens/parte1_1.png)
+![Circuito 1](Imagens/parte1_1.png "Circuito da Tarefa 1")
 
 
