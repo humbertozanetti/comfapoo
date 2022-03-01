@@ -30,7 +30,7 @@ Nessa tarefa vamos conhecer o objeto LED __real__, entender quais são suas prin
 
 #### Classe LED
 
-![Classe LED](Imagens/parte1_6.png)
+![Classe LED](Imagens/parte1_5.png)
 
 
 ### Representando em código-fonte
@@ -141,4 +141,11 @@ void loop()
 }
 
 ```
+---
+### Discussões sobre a prática
 
+O início da 1ª prática estimula a composição do conhecimento estruturado no mapa conceitual abaixo. A apresentação do objeto "real" nos ajuda a identificar o "objeto" a ser programado em linhas de código representará o objeto real LED. Essas relações podemos ver no mapa conceital abaixo.
+
+![Mapa 1](Imagens/parte1_6.png)
+
+![Mapa 1](Imagens/parte1_7.png)
