@@ -9,63 +9,28 @@
 - Mostrar a relação entre a classe e o objeto (__instanciação__ e uso de método __construtor__).
 
 ---
-### Circuitos
+### Tarefa 1 - Conhecendo o objeto LED
 
-#### Tarefa 1
+Nessa tarefa vamos conhecer o objeto LED __real__, entender quais são suas principais __propriedades__ e __ações__ através da demonstrações e alguns diagramas.
+
+#### Circuito para a terefa
 ![Circuito 1](Imagens/parte1_1.png)
-__Circuito da Tarefa 1__
+
 
 ##### Lista de componentes para montagem
 - 1 LED vermelho
 - 1 resistor de 330 ohms
 - 3 cabos de conexão
 
-#### Tarefa 2
-![Circuito 2](Imagens/parte1_2.png)
-__Circuito da Tarefa 2__
-
-##### Lista de componentes para montagem
-- 2 LEDs (1 vermelho e 1 verde)
-- 2 resistores de 330 ohms
-- 4 cabos de conexão
-
-#### Tarefa 3
-![Circuito 3](Imagens/parte1_3.png)
-__Circuito da Tarefa 2__
-
-##### Lista de componentes para montagem
-- 1 LED vermelho
-- 1 resistor de 330 ohms
-- 1 buzzer
-- 6 cabos de conexão
-
-___
-
-### Conhecendo os objetos
-
 #### Objeto LED
 
 ![Representação de um LED](Imagens/parte1_4.png)
-__Características e ações do LED__
 
-#### Objeto Buzzer
 
-![Representação de um LED](Imagens/parte1_5.png)
-__Características e ações do do buzzer__
-
-___
-
-### Representando os objetos Classes
 
 #### Classe LED
 
 ![Classe LED](Imagens/parte1_6.png)
-__Características e ações do LED__
-
-#### Classe Buzzer
-
-![Classe LED](Imagens/parte1_6.png)
-__Características e ações do LED__
 
 
 ### Representando em código-fonte
@@ -136,3 +101,44 @@ void loop() {
   led.piscar();
 }
 ```
+
+___
+
+
+### Tarefa 2
+
+Para essa tarefa, vamos ver uma das maiores vantagens da Programação Orientada a Objetos, que é o reuso de código da classe para criar mais de um objeto.
+Vamos adicionar mais um LED (verde) e vamos criar uma objeto utilizando a classe existente. Vamos fazer uma pisca-pisca alternando entre os 2 LEDs.
+O LED vermelho continua no pino 13 e irá iniciar aceso, enauqnto o LED verde está concectado ao pino 7 e se iniciará apagado, e depois alternamos entre eles.
+
+![Circuito 2](Imagens/parte1_2.png)
+__Circuito da Tarefa 2__
+
+##### Lista de componentes para montagem
+- 2 LEDs (1 vermelho e 1 verde)
+- 2 resistores de 330 ohms
+- 4 cabos de conexão
+
+### Código-fonte
+
+```
+Led ledVermelho = Led(13, LOW);
+Led ledVerde = Led(7, LOW);
+
+void setup() {
+ ledVermelho.configurar();
+ ledVerde.configurar();
+}
+
+void loop() 
+{
+  ledVermelho.acender();
+  ledVerde.apagar();
+  delay(1000);
+  ledVermelho.apagar();
+  ledVerde.acender();
+  delay(1000);
+}
+
+```
+
