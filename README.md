@@ -15,4 +15,4 @@ Ensinar conceitos fundamentais de Programação Orientada a Objetos (POO) promov
 ## Parte 2 - [Encapsulamento](/workshop_parte2.md) 
 ## Parte 3 - [Herança](/workshop_parte3.md) 
 ## Parte 4 - [Polimorfismo](/workshop_parte4.md) 
-## Parte 5 - [Sistema orienta a objetos](/workshop_parte5.md) 
+## Parte 5 - [Sistema orientado a objetos](/workshop_parte5.md) 
