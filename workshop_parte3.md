@@ -123,6 +123,7 @@ As classes LDR e Termistor tem várias características similares, como vemos ab
 #### Superclasse Sensor
 Nesse caso, podemos criar uma classe __Sensor__, que possui __todas as características em comuns__, e criar classes complementares, que só possua as especialidades (atributos e métodos especializados). Com isso, podemos definir que as classes LDR e Termistor poderiam ser essas classes especializadas.
 A partir dessas semelhanças, podemos criar uma __classe base++, com essas características comuns. Essa classe "Sensor' genérico, como vemos abaixo:
+
 ![Classe base Sensor](Imagens/parte3_7.png)
 
 Com isso, as classes LDR e Termistor podem herdar dessa classe Sensor essas __características comuns a elas__, e definindo apenas suas especialidades. Essa organização com as novas classes seria:
