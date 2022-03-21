@@ -25,8 +25,9 @@ Para isso, vamos voltar a usar o conceito de __classe base__ (visto em Herança)
 - 3 cabos de conexão
 
 
-#### Objeto LDR
+#### Objeto LED
 Para essa tarefa, vamos utilizar um objeto LED mais simples.
+
 ![Representação de um LED mais simples](Imagens/parte4_2.png)
 
 #### Classe LED
