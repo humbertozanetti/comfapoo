@@ -128,10 +128,11 @@ void loop()
 ___
 
 
-### Tarefa 2
+### Tarefa 2 - Interação com botão
 
 O encapsulamento tem uma grande vantagem que delegar as responsabilidades de cada objeto, deixando o sistema mais modular e independente dos demais objetos (desacoplamento). Para que outro objeto possa interagir com outro, apenas usaremos esses métodos "interfaces", ou seja, que provêm acesso a informações e dados.
 Nessa tarefa, usando nossa classe LED, vamos construir um sistema onde temos um botão (_push button_) que aciona o acender ou apagar de um LED, através de um método que verifica se o botão está ou não pressionado (`verificaEstado()`). Como nosso LED pode iniciar aceso ou apagado, pois este não tem acesso aos métodos `acender()` e `apagar()`. Nesse cenário, o LED tem a responsabilidade de verificar seu estado e decidir se acende ou apaga, enquanto o botão apenas de verificar se houve ou não o pressionar do botão.
+
 ![Função do botão](Imagens/parte2_4.png)
 
 ### Circuito da Tarefa
