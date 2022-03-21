@@ -27,6 +27,7 @@ Vamos criar __um pequeno sistema__ que gerencia um semáforo, que além de suas 
 
 Nosso __objeto Semáforo__ será um objeto que irá interagir com um grupo de __3 objetos LEDs__ e __1 objeto LDR__. A construção do nosso semáforo será por meio do objeto objeto Semáforo, que irá instanciar 3 objetos Leds ou apenas 1 objeto LED, dependendo de seu modo de uso. Sempre será utilizado um objeto LDR, para verificar a luminosidade, determinando se é dia ou noite.
 No __modo diurno__, o semáforo terá a sequência convencional de um semáforo. Já no __modo noturno__, teremos apenas o LED amarelo piscando, indicando um alerta de proximidade de cruzamento.
+
 ![Modos do semáforo](Imagens/parte5_2.png)
 
 #### Objetos envolvidos
