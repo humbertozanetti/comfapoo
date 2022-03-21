@@ -67,6 +67,7 @@ Com isso, vamos implementar __2 formas novas__ de acender o LED: __piscando__ e 
 Nesta tarefa, vamos criar 2 novas formas de acender um LED
 
 #### Circuito para a tarefa
+
 ![Circuito 1](Imagens/parte4_4.png)
 
 ##### Lista de componentes para montagem
