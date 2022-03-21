@@ -43,6 +43,7 @@ Com isso, podemos definir seus modos de acessos. O que será escondido será dem
 
 #### Classe LED
 Nosso novo diagrama da __Classe LED__, com as marcações privado (-) e público (+).
+
 ![Classe LED](Imagens/parte2_3.png)
 
 
