@@ -171,7 +171,7 @@ class LDR{
 
 ```
 
-Agora vamos utilizar um objeto Semáforo, que irá controlar too o sistema de semáforo, juntamente com os demais objetos. É interessante notar que apenas utilizamos o método --`funcionar()`__ do objeto Semáforo, pois está a lógica que determina o comportamento da sinalização.
+Agora vamos utilizar um objeto Semáforo, que irá controlar too o sistema de semáforo, juntamente com os demais objetos. É interessante notar que apenas utilizamos o método _`funcionar()`__ do objeto Semáforo, pois está a lógica que determina o comportamento da sinalização.
 
 ### Colocando o Semáforo para funcionar
 
