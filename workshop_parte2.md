@@ -11,7 +11,7 @@
 ---
 ### Tarefa 1 - Melhorando nossa classe LED
 
-Nessa tarefa vamos melhorar a nossa classe LED usando o conceito de Encapsulamento. Esse conceito corresponde a __“esconder”__ o que é essencial do objeto, permitindo que outros objetos interajam através de __“interfaces”__ (através de métodos). Simplificando: os objetos possuem internamente os dados que podem sofrer alterações (no caso do LED, o estado seria um exemplo) mas não devem ser acessados por outros objetos ou demais trechos de código. Quem tem que definir essa alteração é o próprio objeto, é a __responsabilidade__ dele!
+Nesta tarefa vamos melhorar a nossa classe LED usando o conceito de Encapsulamento. Esse conceito corresponde a __“esconder”__ o que é essencial do objeto, permitindo que outros objetos interajam através de __“interfaces”__ (através de métodos). Simplificando: os objetos possuem internamente os dados que podem sofrer alterações (no caso do LED, o estado seria um exemplo) mas não devem ser acessados por outros objetos ou demais trechos de código. Quem tem que definir essa alteração é o próprio objeto, é a __responsabilidade__ dele!
 Através de métodos podemos dar acesso a alterações ou verificar os estados desses dados. Nesse momento vamos criar uma nova classe LED, com os métodos `acender()` e `apagar()`, mas acrescentando mais 2:
 - __`trocaEstado`__: esse método será o acesso para que seja trocado o estado do LED, de aceso para pagado, ou vice-versa.
 - __`mostraEstado`__: esse método irá mostrar qual é o estado do LED (aceso ou apagado)
@@ -89,7 +89,7 @@ class Led{
 };
 ```
 
-Podemos notar que os atributos são por padrão definidos como __privado__ (_private_), mas os métodos precisam da demarcação __private:__. A partir da demarcação __public:__ podemos ver nossos métodos __públicos__ (__public__).
+Podemos notar que os atributos são por padrão definidos como __privado__ (_private_), mas os métodos precisam da demarcação __private:__. A partir da demarcação __public:__ podemos ver nossos métodos __públicos__ (__public__). Chamaos esses cocneitos de acesso de __visibilidade__.
 Para comprovar que não acessamos o que é privado, vamos tentar criar um objeto LED apagado e tentar acender através do acesso direto ao método acender().
 
 ```
@@ -201,11 +201,4 @@ void loop() {
 }
 ```
 
-
----
-### Discussões sobre a prática
-
-
-
-![Mapa 1](Imagens/parte1_5.png)
 
