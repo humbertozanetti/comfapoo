@@ -200,5 +200,5 @@ void loop() {
  delay(100);
 }
 ```
-
-
+---
+#### Parte 3 - [Herança](/workshop_parte3.md)
