@@ -93,7 +93,7 @@ class Led{
 ```
 
 
-Vamos agora criar e usar o objeto LED, que está concetado ao pino __13__ e começara apagado.Também aproveitamos para usar o método __`acender()`__, para fazê-lo acender. Ainda nnão usaremos a função obrigatória __`setup()`__ do Arduino, apenas a __`loop()`__ a qual se localiza nossa lógica e o ciclo de repetição constante. Nossa configuração inicial do LED está inserido em nosso método construtor.
+Vamos agora criar e usar o objeto LED, que está conectado ao pino __13__ e começara apagado.Também aproveitamos para usar o método __`acender()`__, para fazê-lo acender. Ainda nnão usaremos a função obrigatória __`setup()`__ do Arduino, apenas a __`loop()`__ a qual se localiza nossa lógica e o ciclo de repetição constante. Nossa configuração inicial do LED está inserido em nosso método construtor.
 ````
 Led led = Led(13);
 
@@ -123,7 +123,28 @@ void loop() {
   led.piscar(1000);
 }
 ```
+Podemos notar que acessamos todas as características do objeto através de suas __ações__ ou __métodos__. Também podemos acessar suas __propriedades__ ou __atributos__, como no exemplo abaixo, que podemos ver o __estado__ do LED no _Monitor Serial_ do Arduino, sendo __0__ (equivale a LOW ou apagado) ou __1__ (equivale a HIGH ou aceso):
+````
+Led led = Led(13);
 
+void setup() {
+ Serial.begin(9600);
+}
+
+void loop() {
+ led.acender();
+ Serial.print("Estado do LED:");
+ Serial.println(led.estado);
+ delay(1000);
+ led.apagar();
+ Serial.print("Estado do LED:");
+ Serial.println(led.estado);
+ delay(1000);
+}
+````
+Portanto, acessamos todas as características de um objeto por meios de seus __atributos__ e __métodos__.
+
+![Atributos e métodos](Imagens/parte1_6.png)
 ___
 
 
