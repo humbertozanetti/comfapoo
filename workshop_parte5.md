@@ -188,3 +188,6 @@ void loop(){
 }
 
 ```
+---
+# Questionário para ser respondido depois do Workshop
+ [Link para o questionário](https://docs.google.com/forms/d/1guj-eJKamzxGT-fbIR0lCKtq7HBAaPq17CeLFSADhaY) 
