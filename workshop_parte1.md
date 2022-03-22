@@ -12,7 +12,7 @@
 ---
 ### Tarefa 1 - Conhecendo o objeto LED
 
-Nessa tarefa vamos conhecer o objeto LED __real__, entender quais são suas principais __propriedades__ e __ações__ através da demonstrações e alguns diagramas.
+Nesta tarefa vamos conhecer o objeto LED __real__, entender quais são suas principais __propriedades__ e __ações__ através da demonstrações e alguns diagramas.
 
 #### Circuito para a tarefa
 ![Circuito 1](Imagens/parte1_1.png)
@@ -36,7 +36,7 @@ Nessa tarefa vamos conhecer o objeto LED __real__, entender quais são suas prin
 
 ### Representando em código-fonte
 
-Para essa tarefa, vamos "traduzir" nosso classe LEd em código-fonte, criando todas suas características (__atributos__) e ações (__métodos__)
+Para esta tarefa, vamos "traduzir" nossa classe LED em código-fonte, criando todas suas características (__atributos__) e ações (__métodos__)
 
 ```
 class Led{
@@ -61,8 +61,8 @@ class Led{
 };
 ```
 
-Por enquanto, não iremos discutir o modo de acesso __`public`__ presente no código (será alvo da Parte 2!).
-Usando a declaração __`this`__ para diferenciar nossos __atributos__ das variáveis que são utilizadas dentro de nossos métodos.
+Por enquanto, não iremos discutir o modo de acesso __`public`__ presente no código (será discutido na Parte 2!).
+Usando a declaração __`this`__  e o operador __seta__ (__->__) para diferenciar nossos __atributos__ das variáveis que são utilizadas dentro de nossos métodos.
 Uma classe descreve um objeto, mas para criar esse objeto, e essa criação chamamos de __instância__. 
 Para criar ou "construir" esse objeto precisamos de uma outro um outro método, um método especial denominado __construtor__.
 Para construir um objeto LED temos que pensar o que seria interessante definir as características (__atributos__) principais do objeto __real__ LED: qual é o pino em que ele está conectado?
@@ -129,9 +129,9 @@ ___
 
 ### Tarefa 2
 
-Para essa tarefa, vamos ver uma das maiores vantagens da Programação Orientada a Objetos, que é o reuso de código da classe para criar mais de um objeto.
+Para esta tarefa, vamos ver uma das maiores vantagens da Programação Orientada a Objetos, que é o reuso de código da classe para criar mais de um objeto.
 Vamos adicionar mais um LED (verde) e vamos criar uma objeto utilizando a classe existente. Vamos fazer uma pisca-pisca alternando entre os 2 LEDs.
-O LED vermelho continua no pino 13 e irá iniciar aceso, enauqnto o LED verde está concectado ao pino 7 e se iniciará apagado, e depois alternamos entre eles.
+O LED vermelho continua no pino 13 e irá iniciar aceso, enquanto o LED verde está concectado ao pino 7 e se iniciará apagado, e depois alternamos entre eles.
 
 ![Circuito 2](Imagens/parte1_2.png)
 __Circuito da Tarefa 2__
@@ -162,10 +162,5 @@ void loop()
 
 ```
 
----
-### Discussões sobre a prática
 
-Nas práticas vimos desde o conceito de Abstração de um objeto até a criação e utilização do mesmo. A apresentação do objeto "real" nos ajuda a identificar o "objeto" a ser programado em linhas de código representará o objeto real LED. Essas relações podemos ver no mapa conceital abaixo.
-
-![Mapa 1](Imagens/parte1_5.png)
 
