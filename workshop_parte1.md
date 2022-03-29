@@ -82,11 +82,11 @@ class Led{
   }
   void acender(){
     digitalWrite(this->pino, HIGH);
-    this->estado = 1; # equivale a HIGH
+    this->estado = 1; // equivale a HIGH
   }
   void apagar(){
     digitalWrite(this->pino, LOW);
-    this->estado = 0; # equilave a LOW
+    this->estado = 0; // equilave a LOW
   }
   void piscar(int intervalo){
     acender();
