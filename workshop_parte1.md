@@ -40,6 +40,7 @@ Para esta tarefa, vamos "traduzir" nossa classe LED em código-fonte, criando to
 
 ```
 class Led{
+  public:
   int pino;
   int estado;
   
@@ -69,6 +70,7 @@ Para construir um objeto LED temos que pensar o que seria interessante definir a
 Esse método construtor, por regra da própria linguagem, deve ter o __nome da classe__ e receber os parâmetros iniciais da sua criação (no caso, o pino o qual está conectado). 
 ```
 class Led{
+  public:
   int pino;
   int estado;
   
