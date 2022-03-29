@@ -68,6 +68,7 @@ Uma classe descreve um objeto, mas para criar esse objeto, e essa criação cham
 Para criar ou "construir" esse objeto precisamos de uma outro um outro método, um método especial denominado __construtor__.
 Para construir um objeto LED temos que pensar o que seria interessante definir as características (__atributos__) principais do objeto __real__ LED: qual é o pino em que ele está conectado?
 Esse método construtor, por regra da própria linguagem, deve ter o __nome da classe__ e receber os parâmetros iniciais da sua criação (no caso, o pino o qual está conectado). 
+Vamos também alterar os métodos __`acender()`__ e __`apagar()`__ para que eles alterem o atributo __`estado`__.
 ```
 class Led{
   public:
@@ -81,9 +82,11 @@ class Led{
   }
   void acender(){
     digitalWrite(this->pino, HIGH);
+    this->estado = 1; # equivale a HIGH
   }
   void apagar(){
     digitalWrite(this->pino, LOW);
+    this->estado = 0; # equilave a LOW
   }
   void piscar(int intervalo){
     acender();
