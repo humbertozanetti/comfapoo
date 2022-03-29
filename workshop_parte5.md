@@ -47,9 +47,56 @@ ___
 
 ### Tarefa 2 - Utilizando o sistema de semáforo
 
-Nesta tarefa vamos criar as classes e ver como o objeto Semáforo interage com os demais objetos.
+Nesta tarefa vamos criar as classes e ver como o objeto __Semáforo__ interage com os demais objetos.
+Vemos que na classe Semáforo encontramos a utilização de objetos __LED__ e __LDR__, e consequentemente o uso de seus métodos. Por isso, colocaremos primeiro as essas classes
 
-### Representando em código-fonte 
+### Representando em código-fonte (classe LED e LDR)
+
+```
+class Led{
+  int pino;
+  int estado;
+  
+  public:
+  Led(int pino){
+    this->pino = pino;
+    pinMode(this->pino, OUTPUT);
+  }
+  void acender(){
+    digitalWrite(this->pino, HIGH);
+  }
+  void apagar(){
+    digitalWrite(this->pino, LOW);
+  }
+  void piscar(int intervalo){
+    acender();
+    delay(intervalo);
+    apagar();
+    delay(intervalo);
+  }
+};
+
+class LDR{
+  int valor;
+  int pino;
+  float lux;
+  
+  public:
+  LDR(int pino){
+    this->pino = pino;
+  }
+  
+  int leValor(){
+    this->valor = analogRead(this->pino);
+    return this->valor;
+  }
+};
+
+```
+
+Agora, podemos criar a classe __Semáforo__ com a inclusão das classes __LED__ e __LDR__.
+
+### Representando em código-fonte (Semáforo)
 
 ```
 class Semaforo{
@@ -95,78 +142,6 @@ class Semaforo{
     }
   }
   
-};
-
-```
-Vemos que na classe Semáforo encontramos a utilização de objetos __LED__ e __LDR__, e consequentemente o uso de seus métodos.
-
-### Representando em código-fonte (classe LED)
-
-```
-class Led{
-  int pino;
-  int estado;
-  
-  public:
-  Led(int pino){
-    this->pino = pino;
-    pinMode(this->pino, OUTPUT);
-  }
-  void acender(){
-    digitalWrite(this->pino, HIGH);
-  }
-  void apagar(){
-    digitalWrite(this->pino, LOW);
-  }
-  void piscar(int intervalo){
-    acender();
-    delay(intervalo);
-    apagar();
-    delay(intervalo);
-  }
-};
-```
-
-### Representando em código-fonte (classe LED e LDR)
-
-```
-class Led{
-  int pino;
-  int estado;
-  
-  public:
-  Led(int pino){
-    this->pino = pino;
-    pinMode(this->pino, OUTPUT);
-  }
-  void acender(){
-    digitalWrite(this->pino, HIGH);
-  }
-  void apagar(){
-    digitalWrite(this->pino, LOW);
-  }
-  void piscar(int intervalo){
-    acender();
-    delay(intervalo);
-    apagar();
-    delay(intervalo);
-  }
-};
-
-class LDR{
-  int valor;
-  int pino;
-  float lux;
-  
-  public:
-  LDR(int pino){
-    this->pino = pino;
-  }
-  
-  int leValor(){
-    this->valor = analogRead(this->pino);
-    return this->valor;
-  }
 };
 
 ```
