@@ -107,6 +107,27 @@ class Termistor{
 
 ```
 
+Podemo fazer um teste rápido com essas classes.
+
+```
+Termistor termistor = Termistor(A1);
+LDR ldr = LDR(A0);
+
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  Serial.print("Temperatura em Celsius: ");
+  Serial.println(termistor.mostraCelsius());
+  Serial.print("Temperatura em Kelvin: ");
+  Serial.println(termistor.mostraKelvin());
+  Serial.print("Luminosidade em lux: ");
+  Serial.println(ldr.mostraLux());
+  delay(1000);
+}
+```
+
 #### Similaridades entre os objetos
 É possível perceber que ambos os objetos compartilham __características semelhantes__, tanto nos __atributos quanto nos métodos__. Inclusive, se repararmos, até __suas montagens na protoboard são semelhantes!__ Quando temos classes com esse comportamento, podemos utilizar o conceito de __herança__.
 Podemos perceber que há similaridades entre os sensores. Isso é comum entre componentes sensores, e podemos otimizar nosso código nos utilizando dessas características similares. Quando temos objetos que possuem atributos e métodos similares, podemos criar uma classe que tenha essas similaridades e, a partir dela, criar __classes mais especialistas__.
