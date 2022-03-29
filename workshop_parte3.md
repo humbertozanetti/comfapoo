@@ -100,7 +100,7 @@ class Termistor{
   }
  
   float mostraCelsius() {
-   this->tempC = this->tempK - 273.15; 
+   this->tempC = mostraKelvin() - 273.15; 
    return this->tempC;
   }
 };
