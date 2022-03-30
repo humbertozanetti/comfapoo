@@ -14,6 +14,12 @@ Ensinar conceitos fundamentais de Programação Orientada a Objetos (POO) promov
  [Link para o questionário](https://docs.google.com/forms/d/1c6jm_Vc3Fqxj_aAxPmDpB9W-69xcYer8_sJY5aPtXQU) 
  
 ---
+
+# Montagem para as práticas
+ ![Montagens](./imagens/montagens.png) 
+ 
+---
+
 # Etapas do workshop
 
 ## Parte 1 - [Classe e Objeto](/workshop_parte1.md) 
