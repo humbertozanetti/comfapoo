@@ -16,7 +16,7 @@ Ensinar conceitos fundamentais de Programação Orientada a Objetos (POO) promov
 ---
 
 # Montagem para as práticas
- ![Montagens](./imagens/montagens.png) 
+ ![Montagens](./Imagens/montagens.png) 
  
 ---
 
