@@ -37,7 +37,7 @@ No __modo diurno__, o semáforo terá a sequência convencional de um semáforo.
 
 ![Classes do Semáforo](Imagens/parte5_4.png)
 
-Em um __sistema orientado a objetos__ esses objetos __interagem entre si__, através de __troca de mensagens_. Uma troca de mensagem, na prática, indica a __invocação de um método de um objeto por outro objeto__. 
+Em um __sistema orientado a objetos__ esses objetos __interagem entre si__, através de _troca de mensagens_. Uma troca de mensagem, na prática, indica a __invocação de um método de um objeto por outro objeto__. 
 Acima vemos que um objeto Semáforo irá chamar o método __`leValor()`__ da classe __LDR__ e o __`piscar()`__ da classe __LED__, por exemplo. 
 Para fazer essa invocação ou chamada, temos que criar um objeto, e através dele utilizar o método e, algumas vezes, enviar também alguma informação (parâmetro para o método), como no método __`piscar()`__. 
 
