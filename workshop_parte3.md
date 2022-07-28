@@ -23,8 +23,8 @@ Esse valor não é nenhuma medida em específico, mas sim um valor que represent
 
 
 ##### Lista de componentes para montagem
-- 1 LDR
-- 1 termistor
+- 1 LDR (sensor de luminosidade)
+- 1 termistor NTC (sensor de temperatura)
 - 1 resistor de 1 kohms
 - 1 resistor de 10 koms
 - 6 cabos de conexão
