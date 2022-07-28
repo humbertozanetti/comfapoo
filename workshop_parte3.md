@@ -5,7 +5,7 @@
 ### Objetivos da prática
 
 - Entender o conceito de __herança.__
-- Entender a aplicação de __reuso__ de código
+- Ampliar os conheicmentos sobre o __reuso__ de código.
 
 
 ---
