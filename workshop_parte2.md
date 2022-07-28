@@ -6,7 +6,7 @@
 
 - Entender melhor o conceito de __encapsulamento__.
 - Compreender os modificadores __público__ e __privado__.
-- Aprender sobre os __tipos de acesso_ à atributos e métodos dos objetos.
+- Aprender sobre os _tipos de acesso_ à atributos e métodos dos objetos.
 
 ---
 ### Tarefa 1 - Melhorando nossa classe LED
