@@ -13,12 +13,6 @@ Ensinar conceitos fundamentais de Programação Orientada a Objetos (POO) promov
 # Questionário para ser respondido antes do Workshop
  [Link para o questionário](https://docs.google.com/forms/d/1c6jm_Vc3Fqxj_aAxPmDpB9W-69xcYer8_sJY5aPtXQU) 
  
----
-
-# Montagem para as práticas
- ![Montagens](./Imagens/montagens.png) 
- 
----
 
 # Etapas do workshop
 
